@@ -12,3 +12,197 @@
 @media(max-width:780px){.container{width:min(100% - 34px,600px)}.nav-wrap{min-height:76px}.brand-logo{width:57px;height:45px}.brand-name strong{font-size:19px}.menu-toggle{display:block;cursor:pointer}.site-nav{display:none;position:absolute;left:0;right:0;top:76px;background:#fffdf7;padding:18px 25px 25px;box-shadow:0 16px 22px #0e29151a;flex-direction:column;align-items:stretch;gap:6px}.site-nav.open{display:flex}.site-nav>a:not(.nav-cta){padding:10px 5px}.nav-cta{text-align:center;margin-top:6px}.hero{min-height:auto}.hero-grid{grid-template-columns:1fr;min-height:auto;padding-top:49px;padding-bottom:45px;gap:0}.hero-copy{padding:0}.hero h1{font-size:clamp(45px,10vw,62px);max-width:550px}.hero-lead{font-size:14px}.hero-art{min-height:440px;transform:none;margin-top:3px}.coffee-bag{transform:scale(.88) rotate(2deg)}.art-glow{width:345px;height:345px}.origin-label{top:35px;right:1px}.craft-label{bottom:38px;left:0}.leaf-one{left:0;top:50px}.leaf-two{left:30px;top:86px}.promise-grid{grid-template-columns:1fr;padding:10px 0}.promise-item,.promise-item:first-child{padding:15px 6px;border-right:0;border-bottom:1px solid #dcd3c1}.promise-item:last-child{border-bottom:0}.section{padding:69px 0}.story-grid,.product-grid,.brew-grid{grid-template-columns:1fr;gap:36px}.story-visual{padding:0 11px 15px 0}.story-photo-frame{height:350px}.sun-disc{right:65px}.farm-house{right:55px;bottom:122px;transform:scale(.88);transform-origin:bottom right}.story-copy h2,.product-copy h2,.contact-copy h2{font-size:37px}.process-section{padding:70px 0}.centered-heading{margin-bottom:31px}.process-grid{grid-template-columns:1fr 1fr;gap:10px}.process-card{padding:22px 18px;min-height:226px}.process-icon{margin-bottom:15px}.process-card h3{font-size:16px}.process-card p{font-size:11px}.process-note{align-items:flex-start}.product-showcase{min-height:435px;order:0}.product-copy{order:1}.product-grid{gap:38px}.product-specs{gap:15px}.brew-grid{gap:32px}.trace-grid{grid-template-columns:1fr;gap:24px;text-align:center}.trace-symbol{width:135px;height:135px;font-size:35px}.trace-symbol>i{height:100px}.trace-copy h2{font-size:34px}.trace-list{text-align:left}.contact-card{grid-template-columns:1fr}.contact-copy{padding:38px 28px}.contact-art{min-height:280px}.contact-art img{width:260px}.footer-inner{flex-wrap:wrap}.footer-inner>p{width:100%;order:3}.footer-bottom{font-size:8px}}
 @media(max-width:450px){.hero h1{font-size:43px;letter-spacing:-1.4px}.hero-actions{gap:18px}.hero-actions .button{width:100%}.hero-art{min-height:390px}.coffee-bag{transform:scale(.77) rotate(2deg)}.art-glow{width:295px;height:295px}.origin-label{top:24px;padding:10px}.craft-label{bottom:25px;padding:10px}.bean-one{right:22px;bottom:49px}.promise-item{padding-left:0!important}.story-photo-frame{height:300px}.photo-caption{left:10px;bottom:10px}.round-stamp{width:90px;height:90px;right:-3px}.round-stamp strong{font-size:18px}.process-grid{grid-template-columns:1fr}.process-card{min-height:0;padding:20px}.process-icon{margin-bottom:12px}.process-card-last{min-height:185px}.product-showcase{min-height:385px}.product-pouch{transform:scale(.86) rotate(-1.8deg)}.product-specs{grid-template-columns:1fr}.brew-method{grid-template-columns:65px 1fr 20px;gap:12px}.method-drawing{transform:scale(.86);transform-origin:left center}.contact-copy{padding:31px 22px}.contact-copy h2{font-size:35px}.footer-brand img{width:45px;height:32px}.footer-brand strong{font-size:14px}.footer-bottom{flex-direction:column;gap:4px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
+
+
+/* Ajustes solicitados en la revisión del sitio: logo centrado, fotos y carrusel. */
+.brand-logo{width:66px;height:58px;overflow:visible;border-radius:0;background:transparent;flex-shrink:0;padding:0}
+.brand-logo img{width:100%;height:100%;object-fit:contain;object-position:center;display:block}
+.bag-label{width:218px;height:180px;margin-top:28px;border:0;border-radius:0;background:transparent;box-shadow:none;overflow:visible;display:flex;align-items:center;justify-content:center}
+.bag-label img{width:100%;height:100%;object-fit:contain;object-position:center;display:block}
+.product-sticker{width:218px;height:178px;margin-top:27px;border:0;border-radius:0;background:transparent;box-shadow:none;overflow:visible;display:flex;align-items:center;justify-content:center}
+.product-sticker img{width:100%;height:100%;object-fit:contain;object-position:center;display:block}
+.contact-art img{width:min(315px,100%);max-height:285px;object-fit:contain;object-position:center;border-radius:0;mix-blend-mode:normal}
+.story-photo-frame.story-real-photo{height:420px;position:relative;overflow:hidden;border-radius:2px;background:#e6ddca;box-shadow:var(--shadow)}
+.story-real-photo>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;display:block}
+.story-real-photo .photo-caption{position:absolute;left:18px;right:18px;bottom:18px;z-index:3;background:rgba(13,40,29,.86);color:#fff8e9;padding:13px 15px;backdrop-filter:blur(5px)}
+.process-card{padding:0 0 24px;overflow:hidden;min-height:360px}
+.process-card .process-photo{display:block;width:100%;height:172px;object-fit:cover;object-position:center;margin:0 0 17px;background:#e8dfcb}
+.process-card .process-number{top:12px;right:12px;z-index:2;background:rgba(255,253,247,.93);padding:4px 8px;border-radius:3px;color:var(--green);font:italic 17px var(--serif)}
+.process-card .process-icon{margin:0 24px 14px;width:38px;height:38px}
+.process-card h3{margin-left:24px;margin-right:24px}
+.process-card p{margin-left:24px;margin-right:24px}
+.gallery-section{background:#f4eee2;padding-top:92px;padding-bottom:100px;overflow:hidden}
+.gallery-section .section-heading{margin-bottom:38px}
+.gallery-carousel{max-width:1100px;margin:0 auto;background:#fffdf7;border:1px solid #e4dac6;box-shadow:0 20px 55px rgba(23,61,43,.08)}
+.gallery-slides{min-height:340px}
+.gallery-slide{margin:0;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(270px,.75fr);align-items:stretch;min-height:340px}
+.gallery-slide[hidden]{display:none!important}
+.gallery-slide>img{display:block;width:100%;height:100%;min-height:340px;max-height:445px;object-fit:cover;object-position:center;background:#e5decf}
+.gallery-slide figcaption{padding:clamp(25px,4vw,52px);display:flex;flex-direction:column;justify-content:center;align-items:flex-start}
+.gallery-slide h3{font:400 clamp(25px,3vw,37px)/1.13 var(--serif);color:var(--green);margin:18px 0 12px;letter-spacing:-.5px}
+.gallery-slide p{font-size:13px;color:var(--muted);line-height:1.8;margin-bottom:0;max-width:320px}
+.gallery-controls{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:17px 22px;border-top:1px solid #e8dfcf;background:#fbf7ef}
+.gallery-arrow{width:40px;height:40px;border:1px solid #d9ccb4;background:#fffdf7;color:var(--green);font-size:21px;cursor:pointer;transition:background .2s,color .2s}
+.gallery-arrow:hover,.gallery-arrow:focus-visible{background:var(--green);color:white}
+.gallery-dots{display:flex;align-items:center;justify-content:center;gap:7px}
+.gallery-dots button{width:39px;height:34px;border:1px solid transparent;background:transparent;color:#7e8276;font:700 10px Arial,sans-serif;cursor:pointer}
+.gallery-dots button.is-active{background:var(--green);color:#fff9ec;border-color:var(--green)}
+.brew-method{color:inherit;text-decoration:none;transition:background .2s,padding .2s}
+.brew-method:hover,.brew-method:focus-visible{background:rgba(255,255,255,.6);padding-left:10px;padding-right:10px;outline-color:var(--gold)}
+.visually-hidden{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:760px){
+  .story-photo-frame.story-real-photo{height:330px}
+  .process-card{min-height:0}
+  .process-card .process-photo{height:190px}
+  .gallery-section{padding-top:62px;padding-bottom:68px}
+  .gallery-slide{grid-template-columns:1fr;min-height:0}
+  .gallery-slide>img{height:270px;min-height:270px;max-height:300px}
+  .gallery-slide figcaption{padding:24px 25px 29px}
+  .gallery-slide h3{margin:12px 0 8px}
+  .gallery-controls{padding:13px 14px}
+  .gallery-arrow{width:36px;height:36px}
+  .gallery-dots{gap:2px}
+  .gallery-dots button{width:33px}
+  .bag-label,.product-sticker{width:190px;height:158px}
+}
+@media(max-width:420px){.brand-logo{width:54px;height:50px}.brand-name strong{font-size:19px}.brand-name small{font-size:8px;letter-spacing:2px}.process-card .process-photo{height:165px}}
+
+
+/* Galería integrada dentro de Nuestra historia */
+.story-section{padding-bottom:0}
+.story-gallery .gallery-carousel{position:relative;padding-bottom:48px;margin-bottom:0;overflow:visible}
+.story-gallery .gallery-slides{position:relative}
+.story-gallery .gallery-controls{position:absolute;inset:0;display:block;z-index:5;padding:0;border:0;background:transparent;pointer-events:none}
+.story-gallery .gallery-arrow{position:absolute;top:calc((100% - 48px)/2);transform:translateY(-50%);display:flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;border:1px solid #ded7c8;background:#fffdf7;color:var(--green);font-size:23px;box-shadow:0 4px 15px rgba(16,40,28,.16);pointer-events:auto}
+.story-gallery .gallery-arrow:hover,.story-gallery .gallery-arrow:focus-visible{background:var(--green);color:#fffdf7}
+.story-gallery .gallery-controls [data-gallery-prev]{left:16px}
+.story-gallery .gallery-controls [data-gallery-next]{right:16px}
+.story-gallery .gallery-dots{position:absolute;left:0;right:0;bottom:12px;display:flex;align-items:center;justify-content:center;gap:9px;pointer-events:auto}
+.story-gallery .gallery-dots button{display:block;flex:0 0 10px;width:10px;height:10px;min-width:10px;padding:0;overflow:hidden;border:0;border-radius:999px;background:#c6c9bd;color:transparent;font-size:0;line-height:0;transition:width .2s,background .2s}
+.story-gallery .gallery-dots button.is-active{flex-basis:22px;width:22px;height:10px;border:0;border-radius:999px;background:var(--green)}
+.contact-links .instagram-social{display:inline-flex;align-items:center;gap:7px}
+.instagram-icon{width:17px;height:17px;display:block;flex:0 0 17px}
+@media(max-width:760px){
+  .story-gallery{padding-top:62px;padding-bottom:68px}
+  .story-gallery .gallery-arrow{width:36px;height:36px;font-size:20px}
+  .story-gallery .gallery-controls [data-gallery-prev]{left:10px}
+  .story-gallery .gallery-controls [data-gallery-next]{right:10px}
+}
+
+
+/* Ajustes finales de Nuestra historia y del carrusel */
+.story-gallery{padding-top:clamp(64px,7vw,88px);padding-bottom:clamp(66px,7vw,92px);scroll-margin-top:104px}
+.story-gallery .container{width:min(1080px,calc(100% - 44px));margin-inline:auto}
+.story-gallery .section-heading{max-width:760px;margin:0 auto 32px}
+.story-gallery .section-heading h2{margin-top:16px;margin-bottom:16px}
+.story-gallery .section-heading p{max-width:650px}
+.story-gallery .gallery-carousel{width:100%;max-width:1000px;margin-inline:auto;padding-bottom:44px;overflow:hidden;border-radius:2px}
+.story-gallery .gallery-slides{min-height:0}
+.story-gallery .gallery-slide{grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);min-height:350px}
+.story-gallery .gallery-slide>img{width:100%;height:100%;min-height:350px;max-height:430px;object-fit:cover}
+.story-gallery .gallery-slide figcaption{padding:clamp(25px,3.4vw,44px);align-items:center;text-align:center}
+.story-gallery .gallery-slide h3{max-width:290px;font-size:clamp(26px,2.8vw,36px);margin:0 0 12px}
+.story-gallery .gallery-slide p{max-width:270px;font-size:13px;line-height:1.75}
+.story-gallery .gallery-arrow{z-index:2}
+.story-gallery .gallery-dots{bottom:11px}
+@media(max-width:760px){
+  .story-gallery .container{width:min(100% - 34px,600px)}
+  .story-gallery .section-heading{margin-bottom:26px}
+  .story-gallery .gallery-carousel{padding-bottom:42px}
+  .story-gallery .gallery-slide{grid-template-columns:1fr;min-height:0}
+  .story-gallery .gallery-slide>img{height:clamp(225px,58vw,320px);min-height:0;max-height:320px}
+  .story-gallery .gallery-slide figcaption{padding:24px 24px 28px}
+  .story-gallery .gallery-slide h3{max-width:100%;font-size:clamp(25px,6vw,32px);margin-bottom:9px}
+  .story-gallery .gallery-slide p{max-width:340px}
+  .story-gallery .gallery-arrow{top:calc((100% - 42px)/2);width:36px;height:36px}
+}
+@media(max-width:420px){
+  .story-gallery .section-heading h2{font-size:clamp(31px,9vw,38px)}
+  .story-gallery .gallery-arrow{width:33px;height:33px;font-size:18px}
+  .story-gallery .gallery-controls [data-gallery-prev]{left:8px}
+  .story-gallery .gallery-controls [data-gallery-next]{right:8px}
+}
+
+/* Ajustes adicionales solicitados: carrusel amplio y fotografías de proceso más visibles. */
+.story-gallery .container {
+  width: min(1240px, calc(100% - 44px));
+  max-width: none;
+}
+.story-gallery .gallery-carousel {
+  width: 100%;
+  max-width: none;
+  margin-inline: auto;
+}
+.story-gallery .gallery-slide {
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, .75fr);
+  min-height: clamp(430px, 36vw, 500px);
+}
+.story-gallery .gallery-slide > img {
+  width: 100%;
+  height: clamp(430px, 36vw, 500px);
+  min-height: clamp(430px, 36vw, 500px);
+  max-height: none;
+  object-fit: cover;
+  object-position: center;
+}
+.story-gallery .gallery-slide figcaption {
+  padding: clamp(30px, 4vw, 58px);
+}
+
+.process-section > .container {
+  width: min(1240px, calc(100% - 44px));
+  max-width: none;
+}
+.process-grid {
+  gap: 22px;
+}
+.process-card {
+  min-height: 0;
+}
+.process-card .process-photo {
+  height: clamp(220px, 18vw, 260px);
+  margin-bottom: 20px;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (max-width: 780px) {
+  .story-gallery .container {
+    width: min(calc(100% - 34px), 700px);
+  }
+  .story-gallery .gallery-slide {
+    grid-template-columns: 1fr;
+    min-height: 0;
+  }
+  .story-gallery .gallery-slide > img {
+    height: clamp(240px, 58vw, 360px);
+    min-height: 0;
+    max-height: none;
+  }
+  .story-gallery .gallery-slide figcaption {
+    padding: 28px 26px 34px;
+  }
+  .process-section > .container {
+    width: min(calc(100% - 34px), 700px);
+  }
+  .process-grid {
+    gap: 16px;
+  }
+  .process-card .process-photo {
+    height: clamp(210px, 30vw, 250px);
+  }
+}
+
+@media (max-width: 450px) {
+  .story-gallery .container,
+  .process-section > .container {
+    width: calc(100% - 28px);
+  }
+  .story-gallery .gallery-slide > img {
+    height: clamp(230px, 62vw, 300px);
+  }
+  .process-card .process-photo {
+    height: clamp(215px, 62vw, 270px);
+  }
+}
+
